@@ -1,4 +1,4 @@
-# JavaScript Basic
+# 🌱 JavaScript Basic
 
 ## 변수
 
@@ -11,9 +11,7 @@
 ### 변수 명명 규칙
 
 1. 숫자/문자 사용 ➡️ 단, **첫 글자는 숫자가 될 수 없음.**
-
-- 예) `let 1st` (X), `let num1` (O)
-
+   - 예) `let 1st` (X), `let num1` (O)
 2. 특수기호는 **`_`**, **`$`** 만 사용 가능
 
 ---
@@ -174,48 +172,48 @@ for(let i = 0; i < 10; i++) {
 
 1. **함수 선언문**
 
-```javascript
-function sum(a, b) {
-  let result = a + b;
-
-  return result;
-}
-```
-
-- 함수 선언하기 전에 접근 가능
+    ```javascript
+    function sum(a, b) {
+      let result = a + b;
+    
+      return result;
+    }
+    ```
+    
+    - 함수 선언하기 전에 접근 가능
 
 2. **함수 표현식**
 
-```javascript
-let sum = function (a, b) {
-  let result = a + b;
-
-  return result;
-};
-```
-
-- 함수 코드를 만나야 생성되기 때문에, 함수 선언 전에 접근 불가능
+    ```javascript
+    let sum = function (a, b) {
+      let result = a + b;
+    
+      return result;
+    };
+    ```
+    
+    - 함수 코드를 만나야 생성되기 때문에, 함수 선언 전에 접근 불가능
 
 3. **화살표 함수**
 
-```javascript
-// 화살표(=>) 우측엔 표현식이 있음
-let sum = (a, b) => a + b;
-
-// 중괄호{ ... }를 사용하면 본문에 여러 줄의 코드를 작성할 수 있음. return문이 꼭 있어야 함.
-let sum = (a, b) => {
-  // ...
-  return a + b;
-};
-
-// 인수가 없는 경우
-let sayHi = () => alert("Hello");
-
-// 인수가 하나인 경우
-let double = (n) => n * 2;
-```
-
-- 함수 표현식과 마찬가지로, 함수 선언 전에 접근 불가능
+    ```javascript
+    // 화살표(=>) 우측엔 표현식이 있음
+    let sum = (a, b) => a + b;
+    
+    // 중괄호{ ... }를 사용하면 본문에 여러 줄의 코드를 작성할 수 있음. return문이 꼭 있어야 함.
+    let sum = (a, b) => {
+      // ...
+      return a + b;
+    };
+    
+    // 인수가 없는 경우
+    let sayHi = () => alert("Hello");
+    
+    // 인수가 하나인 경우
+    let double = (n) => n * 2;
+    ```
+    
+    - 함수 표현식과 마찬가지로, 함수 선언 전에 접근 불가능
 
 - 함수는 지역 변수를 가질 수 있다.
   - **지역 변수**는 함수 본문에 선언된 변수로, **함수 내부에서만 접근**할 수 있다.
